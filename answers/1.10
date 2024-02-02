@@ -1,0 +1,2 @@
+docker ps
+docker exec -it my-flask-app/bin/bash
