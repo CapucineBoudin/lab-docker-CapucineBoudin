@@ -1,0 +1,3 @@
+docker stop my-flask-app
+docker rm my-flask-app
+docker run -d --name meaningful-name -p 5000:5000 -e CURRENT_ENVIRONMENT=production capucineboudin/my-flask-app
