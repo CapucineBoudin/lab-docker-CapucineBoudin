@@ -1,0 +1,5 @@
+docker stop my-flask-app
+docker run -d -p 5000:5000 -e environment=development my-flask-app
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi -f $(docker images -q)
